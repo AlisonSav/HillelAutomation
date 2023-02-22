@@ -21,7 +21,7 @@ print(full_name_3)
 
 # Ex2
 def kolo():
-    r = int(input('Enter radius of the circle: '))
+    r = float(input('Enter radius of the circle: '))
     length = 2 * pi * r
     s = pi * r ** 2
     print(f'The length of the circle is {round(length, 3)}. The area of the circle is {round(s, 3)}.')
