@@ -1,5 +1,6 @@
 """ Homework 3 """
 command = input('Start! Enter command: ')
+commands_list = ['add', 'earliest', 'latest', 'shortest', 'longest']
 working_list = []
 while True:
     if command == 'add':
@@ -15,6 +16,8 @@ while True:
     elif command == 'shortest':
         working_list.sort(key=len)
         print(working_list)
+    elif command not in commands_list:
+        print('You have entered invalid command')
     elif command == 'exit':
         break
     command = input('Enter command: ')
